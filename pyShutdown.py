@@ -115,7 +115,7 @@ def hibernate():
 
 
 def shutdown():
-    os.system('shutdown -s')
+    os.system('shutdown -s -t 0')
 
 
 if __name__ == '__main__':
