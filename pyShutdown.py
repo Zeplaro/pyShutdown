@@ -7,7 +7,6 @@ from functools import partial
 
 
 # Dark Palette
-QtWidgets.QApplication.setStyle("Fusion")
 dark_palette = QtGui.QPalette()
 dark_palette.setColor(QtGui.QPalette.Base, QtGui.QColor(43, 43, 43))
 dark_palette.setColor(QtGui.QPalette.Window, QtGui.QColor(60, 63, 65))
@@ -21,7 +20,6 @@ dark_palette.setColor(QtGui.QPalette.Disabled, QtGui.QPalette.Highlight, QtGui.Q
 dark_palette.setColor(QtGui.QPalette.HighlightedText, QtCore.Qt.white)
 
 # Default Palette
-QtWidgets.QApplication.setStyle("Fusion")
 default_palette = QtGui.QPalette()
 default_palette.setColor(QtGui.QPalette.AlternateBase, QtGui.QColor(245, 245, 245))
 
@@ -41,6 +39,7 @@ class MainUI(QtWidgets.QMainWindow):
         super(MainUI, self).__init__()
         uic.loadUi('pysd.ui', self)
 
+        QtWidgets.QApplication.setStyle("Fusion")
         self.setPalette(dark_palette)
 
         self.base_time = QtCore.QTime(2, 0, 0)

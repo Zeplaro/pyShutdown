@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>473</width>
-    <height>196</height>
+    <width>477</width>
+    <height>183</height>
    </rect>
   </property>
   <property name="font">
@@ -20,6 +20,12 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout_7">
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
     <item>
      <layout class="QHBoxLayout" name="main_layout">
       <property name="leftMargin">
@@ -182,8 +188,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>473</width>
-     <height>27</height>
+     <width>477</width>
+     <height>23</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuView">
