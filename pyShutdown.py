@@ -37,7 +37,10 @@ def launch_ui():
 class MainUI(QtWidgets.QMainWindow):
     def __init__(self):
         super(MainUI, self).__init__()
-        uic.loadUi('pysd.ui', self)
+        uic.loadUi('pyShutdown.ui', self)
+        self.setWindowTitle('pyShutdown')
+        # icon fullpath needed for pyinstaller
+        self.setWindowIcon(QtGui.QIcon('pyShutdown.ico'))
 
         QtWidgets.QApplication.setStyle("Fusion")
         self.setPalette(dark_palette)
